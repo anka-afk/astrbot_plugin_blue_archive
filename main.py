@@ -19,11 +19,11 @@ class StrategyQuery(Star):
         self.logger = logging.getLogger(__name__)
 
         self.resource_hash_map = {}
-        self.base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "blue_archive"))
+        self.base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "blue_archive"))
         if not os.path.exists(self.base_dir):
             os.makedirs(self.base_dir, exist_ok=True)
 
-        self.hash_map_file = os.path.join(os.path.dirname(__file__), "..", "resource_hash_map.json")
+        self.hash_map_file = os.path.join(self.base_dir, "resource_hash_map.json")
         if os.path.exists(self.hash_map_file):
             with open(self.hash_map_file, 'r', encoding='utf-8') as f:
                 self.resource_hash_map = json.load(f)
