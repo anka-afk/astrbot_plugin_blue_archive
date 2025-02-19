@@ -1,7 +1,7 @@
 name: blue_archive
-desc: anka - 蔚蓝档案攻略查询 - 指令格式：/攻略查询 <攻略名称>
+desc: anka - 蔚蓝档案攻略查询 - 指令格式：攻略查询 <攻略名称>
 help: |
-  anka - 蔚蓝档案攻略查询 - 指令格式：/攻略查询 <攻略名称>
+  anka - 蔚蓝档案攻略查询 - 指令格式：攻略查询 <攻略名称>
 version: v1.0
 author: anka
-repo:
+repo: https://github.com/anka-afk/astrbot_plugin_blue_archive
